@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 0%);
+  --foreground: hsl(48, 96%, 53%);
+  --muted: hsl(0, 0%, 10%);
+  --muted-foreground: hsl(48, 30%, 70%);
+  --popover: hsl(0, 0%, 5%);
+  --popover-foreground: hsl(48, 96%, 53%);
+  --card: hsl(0, 0%, 5%);
+  --card-foreground: hsl(48, 96%, 53%);
+  --border: hsl(48, 30%, 20%);
+  --input: hsl(0, 0%, 10%);
+  --primary: hsl(48, 96%, 53%);
+  --primary-foreground: hsl(0, 0%, 0%);
+  --secondary: hsl(0, 0%, 15%);
+  --secondary-foreground: hsl(48, 96%, 53%);
+  --accent: hsl(48, 30%, 20%);
+  --accent-foreground: hsl(48, 96%, 53%);
+  --destructive: hsl(0, 62%, 50%);
+  --destructive-foreground: hsl(48, 96%, 53%);
+  --ring: hsl(48, 96%, 53%);
+  --radius: 0.5rem;
+  --elite: hsl(0, 84%, 60%);
+  --division1: hsl(48, 96%, 53%);
+  --division2: hsl(160, 84%, 39%);
+  --recruits: hsl(220, 13%, 46%);
+}
+
+.dark {
+  --background: hsl(0, 0%, 0%);
+  --foreground: hsl(48, 96%, 53%);
+  --muted: hsl(0, 0%, 10%);
+  --muted-foreground: hsl(48, 30%, 70%);
+  --popover: hsl(0, 0%, 5%);
+  --popover-foreground: hsl(48, 96%, 53%);
+  --card: hsl(0, 0%, 5%);
+  --card-foreground: hsl(48, 96%, 53%);
+  --border: hsl(48, 30%, 20%);
+  --input: hsl(0, 0%, 10%);
+  --primary: hsl(48, 96%, 53%);
+  --primary-foreground: hsl(0, 0%, 0%);
+  --secondary: hsl(0, 0%, 15%);
+  --secondary-foreground: hsl(48, 96%, 53%);
+  --accent: hsl(48, 30%, 20%);
+  --accent-foreground: hsl(48, 96%, 53%);
+  --destructive: hsl(0, 62%, 50%);
+  --destructive-foreground: hsl(48, 96%, 53%);
+  --ring: hsl(48, 96%, 53%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .division-card {
+    background: linear-gradient(135deg, rgba(30, 41, 59, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%);
+    backdrop-filter: blur(10px);
+  }
+  
+  .elite-color {
+    color: var(--elite);
+  }
+  
+  .division1-color {
+    color: var(--division1);
+  }
+  
+  .division2-color {
+    color: var(--division2);
+  }
+  
+  .recruits-color {
+    color: var(--recruits);
+  }
+  
+  .elite-bg {
+    background-color: var(--elite);
+  }
+  
+  .division1-bg {
+    background-color: var(--division1);
+  }
+  
+  .division2-bg {
+    background-color: var(--division2);
+  }
+  
+  .recruits-bg {
+    background-color: var(--recruits);
+  }
+}
